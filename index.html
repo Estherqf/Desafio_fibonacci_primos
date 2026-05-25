@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Banco Fibonacci Prime</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="hero">
+
+        <div class="hero-contenido">
+
+            <p class="bienvenida">
+                Bienvenido al sistema interactivo
+            </p>
+
+            <h1>
+                Banco Fibonacci Prime
+            </h1>
+
+            <p class="descripcion-hero">
+
+                Aplicación web que utiliza
+                números primos y la serie Fibonacci
+                para resolver problemas relacionados
+                con seguridad bancaria y ahorro inteligente.
+
+            </p>
+
+            <p class="estudiante">
+                Estudiante: Ruth Esther Quiroga Flores
+            </p>
+
+            <a href="#contexto"
+                class="boton-link">
+
+                Ver Proyecto
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- CONTEXTO -->
+
+    <section class="contenedor"
+        id="contexto">
+
+        <div class="titulo">
+
+            <h2>
+                Introducción y Contexto
+            </h2>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <p>
+
+                Actualmente los bancos digitales
+                necesitan sistemas seguros para proteger
+                la información de los usuarios y también
+                herramientas que ayuden a mejorar la
+                administración financiera.
+
+            </p>
+
+            <p>
+
+                En este proyecto se aplican conceptos
+                matemáticos mediante JavaScript,
+                HTML y CSS para simular situaciones
+                reales relacionadas con un banco digital.
+
+            </p>
+
+            <p>
+
+                Los números primos son utilizados
+                para validar PINs de acceso seguros,
+                mientras que la serie Fibonacci
+                permite generar un sistema
+                progresivo de ahorro.
+
+            </p>
+
+        </div>
+
+
+        <!-- PROBLEMAS -->
+
+        <div class="grid">
+
+            <div class="problema">
+
+                <span class="icono">
+                    🔐
+                </span>
+
+                <h3>
+                    Seguridad Bancaria
+                </h3>
+
+                <p>
+
+                    El sistema analiza si un PIN
+                    ingresado por el usuario es
+                    un número primo.
+
+                </p>
+
+                <p>
+
+                    Los números primos son importantes
+                    en informática y criptografía
+                    porque poseen propiedades útiles
+                    para sistemas de seguridad.
+
+                </p>
+
+            </div>
+
+
+            <div class="problema">
+
+                <span class="icono">
+                    💰
+                </span>
+
+                <h3>
+                    Ahorro Inteligente
+                </h3>
+
+                <p>
+
+                    El banco propone un sistema
+                    de ahorro progresivo usando
+                    la serie Fibonacci.
+
+                </p>
+
+                <p>
+
+                    Cada mes aumenta ligeramente
+                    la cantidad de dinero ahorrado,
+                    ayudando a generar un hábito
+                    financiero organizado.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ALGORITMOS -->
+
+    <section class="contenedor">
+
+        <div class="titulo">
+
+            <h2>
+                Explicación de los Algoritmos
+            </h2>
+
+        </div>
+
+
+        <div class="grid">
+
+            <div class="algoritmo">
+
+                <h3>
+                    Algoritmo de Fibonacci
+                </h3>
+
+                <p>
+
+                    La serie Fibonacci inicia con
+                    los números 0 y 1.
+
+                </p>
+
+                <p>
+
+                    Cada nuevo número se obtiene
+                    sumando los dos anteriores.
+
+                </p>
+
+                <div class="codigo">
+
+                    0, 1, 1, 2, 3, 5, 8, 13...
+
+                </div>
+
+                <p>
+
+                    En este proyecto la serie
+                    se utiliza para calcular
+                    un ahorro progresivo mensual.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="algoritmo">
+
+                <h3>
+                    Algoritmo de Números Primos
+                </h3>
+
+                <p>
+
+                    Un número primo solamente
+                    puede dividirse exactamente
+                    entre 1 y sí mismo.
+                </p>
+
+                <p>
+                    Para verificar si un número
+                    es primo, el programa cuenta
+                    cuántas divisiones exactas posee.
+                </p>
+                <div class="codigo">
+
+                    2, 3, 5, 7, 11, 13...
+
+                </div>
+
+                <p>
+                    Si el número tiene exactamente
+                    dos divisores, entonces
+                    es considerado primo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FORMULARIO PIN -->
+
+    <section class="contenedor">
+
+        <div class="tarjeta grande">
+
+            <h2>
+                Verificación de PIN Bancario
+            </h2>
+
+            <p>
+
+                Ingrese un PIN numérico
+                para verificar si es seguro.
+
+            </p>
+
+
+            <form id="formPin">
+
+                <input type="number"
+                    id="pin"
+                    placeholder="Ingrese un PIN">
+
+                <button type="submit">
+
+                    Verificar PIN
+
+                </button>
+
+            </form>
+
+
+            <div id="resultadoPin"
+                class="resultado">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FORMULARIO AHORRO -->
+
+    <section class="contenedor">
+
+        <div class="tarjeta grande">
+
+            <h2>
+                Plan de Ahorro Fibonacci
+            </h2>
+
+            <p>
+
+                Ingrese la cantidad de meses
+                para calcular su ahorro progresivo.
+
+            </p>
+
+
+            <form id="formAhorro">
+
+                <input type="number"
+                    id="meses"
+                    placeholder="Cantidad de meses">
+
+                <button type="submit">
+
+                    Calcular Ahorro
+
+                </button>
+
+            </form>
+
+
+            <div id="resultadoAhorro"
+                class="resultado">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONCLUSIÓN -->
+
+    <section class="contenedor">
+
+        <div class="tarjeta">
+
+            <h2>
+                Conclusión
+            </h2>
+
+            <p>
+
+                Las matemáticas son fundamentales
+                en muchas áreas de la vida real,
+                especialmente en la tecnología
+                y los sistemas financieros.
+
+            </p>
+
+            <p>
+
+                Los números primos son recomendables
+                para sistemas de seguridad porque
+                ayudan en procesos de validación,
+                criptografía y protección de información.
+
+            </p>
+
+            <p>
+
+                La serie Fibonacci permite crear
+                modelos de crecimiento progresivo,
+                siendo útil para estrategias
+                de ahorro y planificación financiera.
+
+            </p>
+
+            <p>
+
+                Gracias a estos algoritmos,
+                es posible desarrollar sistemas
+                más seguros, organizados y eficientes.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ENLACES -->
+
+    <section class="contenedor">
+
+        <div class="tarjeta enlaces">
+
+            <h2>
+                Enlaces del Proyecto
+            </h2>
+
+            <div class="botones">
+
+                <a href=" "
+                    target="_blank"
+                    class="boton-link">
+
+                    Repositorio GitHub
+
+                </a>
+
+                <a href=" "
+                    target="_blank"
+                    class="boton-link">
+
+                    Página Publicada
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
